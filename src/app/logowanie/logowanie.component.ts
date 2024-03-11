@@ -11,14 +11,16 @@ export class LogowanieComponent {
   password: ''
   };
 
- 
+ isLoggedIn = false;
 
   logowanie() {
     // Tutaj można zaimplementować logikę logowania
     if (this.formData.username === 'przykladowyUzytkownik' && this.formData.password === 'przykladoweHaslo') {
       console.log('Zalogowano pomyślnie!');
+      this.isLoggedIn = true;
     } else {
       console.log('Błąd logowania. Spróbuj ponownie.');
+      this.isLoggedIn = false;
     }
   }
 }
