@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // Importowanie FormsModule
 
@@ -8,15 +8,16 @@ import { LogowanieComponent } from './logowanie/logowanie.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LogowanieComponent
+    AppComponent,   
+    LogowanieComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
